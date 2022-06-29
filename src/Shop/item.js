@@ -28,32 +28,12 @@ const Item = () => {
 
 
   return (
-    <div  class = "w-25">
+    <div className="  " style={{ margin: 'auto', width: '30%' }}>
       <h1>{item.title}</h1>
       <img alt='' src={item.image} style={{ width: '100%' }} />
       <h3>{item.price} $</h3>
       <p>{item.description}</p>
 
-
-
-      <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-        </tbody>
-      </table>
 
     </div>
 

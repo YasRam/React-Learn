@@ -16,14 +16,13 @@ const ListItems = () => {
   const [products, setproduct] = useState([])
   console.log("sss", products);
   return (
-    <div>
+    <div className='row container' style={{ 'text-align': 'center' ,margin:'auto'}}>
       <h1>Shop</h1>
-
       {products.map((item, i) => {
         return (
-          <div >
-            <Link to={`/item/${item.id}`} key= {i}>
-              <img alt='' src={item.image} style={{ width: '50%' }} />
+          <div className='col-3' >
+            <Link to={`/item/${item.id}` } key= {i} className='border-2' style={{'text-decoration': 'none',color:'#000'}}>
+              <img alt='' src={item.image} style={{ width: '100%',height:'25rem' }} />
               <p>{item.title}</p>
               <p>{item.price}</p>
             </Link>
