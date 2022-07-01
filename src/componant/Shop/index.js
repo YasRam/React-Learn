@@ -14,7 +14,6 @@ const ListItems = () => {
       .then(json => setproduct(json))
   }
   const [products, setproduct] = useState([])
-  console.log("sss", products);
   return (
     <div className='row container' style={{ 'text-align': 'center' ,margin:'auto'}}>
       <h1>Shop</h1>

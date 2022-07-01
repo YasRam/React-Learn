@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom'
 const Item = () => {
 
   const urlId = useParams();
-  console.log(urlId.id);
 
 
 
@@ -21,7 +20,6 @@ const Item = () => {
       .then(json => setItem(json))
   }
   const [item, setItem] = useState([])
-  // console.log("sss", item);
 
 
 

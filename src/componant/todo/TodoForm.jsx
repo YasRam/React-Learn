@@ -12,7 +12,7 @@ const TodoForm = ({ addTodo }) => {
 
   return (
     <div>
-      <h3 Name="text-muted mb-4">Add a TODO</h3>
+      <h3 name="text-muted mb-4">Add a TODO</h3>
 
       <form onSubmit={handleSubmission}>
         <input
@@ -32,7 +32,7 @@ const TodoForm = ({ addTodo }) => {
           value={content}
           onChange={(e) => setContent(e.target.value)}
         ></textarea>
-        <button Name="my-4 btn btn-primary btn-sm px-4" type="submit">
+        <button name="my-4 btn btn-primary btn-sm px-4" type="submit">
           Add Todo
         </button>
       </form>

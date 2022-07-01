@@ -1,5 +1,5 @@
 import { type } from '@testing-library/user-event/dist/type';
-import { createStore } from 'redux';
+// import { createStore } from 'redux';
 
 // Action
 export const addTodoAct = (payload) => {
@@ -19,7 +19,7 @@ const initialState = {
     todos: []
 }
 
-const rootReducer = (state = initialState, action) => {
+export const rootReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'ADD_TODO':
             return {
@@ -39,8 +39,8 @@ const rootReducer = (state = initialState, action) => {
     return state;
 }//reducer
 
-export const store = createStore(
-    rootReducer
-);//store
+// export const store = createStore(
+//     rootReducer
+// );//store
 
 

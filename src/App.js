@@ -8,7 +8,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Item from './componant/Shop/item';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Todo from './pages/todo/Todo'
-// import Todo from './componant/todo'
 
 
 function App() {

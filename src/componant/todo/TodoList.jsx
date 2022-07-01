@@ -4,10 +4,10 @@ const TodoList = ({ todos, deleteTodo }) => {
     todos && todos.length > 0 ? (
       todos.map((todo, i) => {
         return (
-          <div class="alert alert-success" key={i}>
+          <div className="alert alert-success" key={i}>
             <strong>{todo.title}</strong><br />
             <p>{todo.content}</p><br />
-            <button onClick={() => deleteTodo(i)} type="button" class="btn btn-danger">X</button>
+            <button onClick={() => deleteTodo(i)} type="button" className="btn btn-danger">X</button>
           </div>
         );
       })
