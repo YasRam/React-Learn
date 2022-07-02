@@ -24,9 +24,7 @@ const shopSlice = createSlice({
     extraReducer: {
         [getProductElements.pending]: (state, action) => {
             state.loading = true
-            
             console.log('pending', action)
-            
         },
 
         [getProductElements.fulfilled]: (state, action) => {
@@ -42,6 +40,6 @@ const shopSlice = createSlice({
         },
     }
 })
-console.log(shopSlice)
+// console.log(shopSlice)
 export const { addProductAct } = shopSlice.actions
 export default shopSlice
