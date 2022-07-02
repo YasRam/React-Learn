@@ -1,16 +1,17 @@
-// import { createStore } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
-// import { rootReducer } from './config';
 import { todoSlice } from './feature/todoSlice'
+import shopSlice from './feature/shopSlice'
 
 
+const aaa= todoSlice.reducer
+const bbb= shopSlice.reducer
+console.log("aaa",aaa);
+console.log("bbb",bbb);
 
-
-console.log(todoSlice)
-
-// export const store = createStore(rootReducer);//store
 export const store = configureStore({
-    reducer: todoSlice.reducer
+    reducer: {
+        aaa,
+        bbb
+    }
+
 });//store
-
-

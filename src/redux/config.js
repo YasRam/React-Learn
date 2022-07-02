@@ -1,5 +1,4 @@
 import { type } from '@testing-library/user-event/dist/type';
-// import { createStore } from 'redux';
 
 // Action
 export const addTodoAct = (payload) => {
@@ -15,9 +14,7 @@ export const deletTodoAct = (payload) => {
     }
 }
 
-const initialState = {
-    todos: []
-}
+const initialState = { todos: [] }
 
 export const rootReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -38,9 +35,3 @@ export const rootReducer = (state = initialState, action) => {
     console.log(state)
     return state;
 }//reducer
-
-// export const store = createStore(
-//     rootReducer
-// );//store
-
-

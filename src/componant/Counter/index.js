@@ -9,15 +9,12 @@ function Counter() {
 
   const increaseNum = () => {
     setnumber(number + 1)
-    console.log("sss")
   }
   const decreaseNum = () => {
     setnumber(number - 1)
-    console.log("ooo")
   }
   const resetNum = () => {
     setnumber(0)
-    console.log("ccc")
   }
 
   return (

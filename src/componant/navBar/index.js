@@ -1,15 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Navbar = () => {
     return (
-        
-            <nav className="navbar navbar-dark bg-dark">
-                <div className='container'>
+        <nav className="navbar navbar-dark bg-dark">
+            <div className='container'>
                 <h3>
-                    <Link className="navbar-brand"  to='/'>Logo</Link>
+                    <Link className="navbar-brand" to='/'>Logo</Link>
                 </h3>
-
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li className="nav-item active"><Link to='/' className="nav-link"> HOME</Link></li>
                     <li className="nav-item"><Link to='/shop' className="nav-link">SHOP</Link></li>
@@ -17,8 +16,12 @@ const Navbar = () => {
                     <li className="nav-item"><Link to='/aboutme' className="nav-link">ABOUT ME</Link></li>
                     <li className="nav-item"><Link to='/todo' className="nav-link">To Do</Link></li>
                 </ul>
-                </div>
-            </nav>
+                <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li className="nav-item"><Link to='/login' className="nav-link">LOG IN</Link></li>
+                    <li className="nav-item"><Link to='/signup' className="nav-link">Sign Up</Link></li>
+                </ul>
+            </div>
+        </nav>
     )
 }
 

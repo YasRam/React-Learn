@@ -3,11 +3,13 @@ import Navbar from './componant/navBar';
 import Home from './componant/Home';
 import ListItems from './componant/Shop';
 import Aboutme from './componant/Aboutme';
-import Counter from './componant/pro';
+import Counter from './componant/Counter';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Item from './componant/Shop/item';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Todo from './pages/todo/Todo'
+import Login from './componant/login';
+import Signup from './componant/signup';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path='/aboutme' element={<Aboutme />} />
         <Route path='/item/:id' element={<Item />} />
         <Route path='/todo' element={<Todo />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
 
       </Routes>
     </BrowserRouter>
