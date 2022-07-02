@@ -24,7 +24,9 @@ const shopSlice = createSlice({
     extraReducer: {
         [getProductElements.pending]: (state, action) => {
             state.loading = true
+            
             console.log('pending', action)
+            
         },
 
         [getProductElements.fulfilled]: (state, action) => {

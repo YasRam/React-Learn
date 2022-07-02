@@ -4,14 +4,11 @@ import { useForm } from 'react-hook-form'
 
 const Signup = () => {
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
-
-    const onsubmit = (e, data) => {
-        // e.preventDefault()      
-        // console.log(data)
-
+    const { register, handleSubmit, formState: { errors }, watch } = useForm();
+    const onsubmit = (data) => {
+        console.log(data)
     }
-
+console.log(watch());
     console.log(errors)
 
     return (
@@ -54,7 +51,7 @@ const Signup = () => {
                                     }
                                 </div>
                                 <div className="col-md-12">
-                                    <input className="form-control" type="password" name="password" placeholder="Password" {...register('Password', { required: true, minLength: 20 })} />
+                                    <input className="form-control" type="password" name="password" placeholder="Password" {...register('password', { required: true, minLength: 6 })} />
                                     {
                                         (errors.password && errors.password.type === "minLength") &&
                                         <div className='text-warning'>Password is so short!</div>
@@ -66,7 +63,6 @@ const Signup = () => {
                                 </div>
                                 <div className="col-md-12">
                                     <input className="form-control" type="password" name="Confiempassword" placeholder="Confiem Password"  {...register('ConPassword', { required: true })} />
-                                    <div className="valid-feedback">Password field is valid!</div>
                                     {
                                         (errors.ConPassword && errors.ConPassword.type === "required") &&
                                         <div className='text-warning'>confirn password field cannot be blank!</div>

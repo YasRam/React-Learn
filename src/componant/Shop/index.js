@@ -17,7 +17,8 @@ const dispatch=  useDispatch()
   //     .then(json => setproduct(json))
   // }
   // const [products, setproduct] = useState([])
-  const products = useSelector(state =>state.todos)
+  const products = useSelector(state =>state.bbb.product)
+  
   console.log("product",products)
   // console.log("aaa",dispatch(getProductElements(  )))
 
